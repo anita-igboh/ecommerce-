@@ -46,9 +46,28 @@ button{
     
 
 }
+.num{
+    font-size: 0.8em;
+}
+.up{
+    font-size: 0.8em;
+}
+.button{
+    background-color: #FFFFFF;
+    border-style: none;
+}
 .btn-purple{
     /* box-shadow: -1px 1px 8px rgba(126, 114, 242, 0.578726); */
     background:linear-gradient(188.54deg, #9E94FF 0%, #7E72F2 99.2%);
+
+}
+.caf{
+    margin-top: 8em;
+    border-radius: 0.4em;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #6F64F8;
+    font-size: 12px;
 
 }
 .section{
@@ -75,6 +94,12 @@ button{
 .section__app{
     margin-left: 1.5em;
     padding: 0.5em;
+    color: #2C2C2C;
+    font-size: 10px;
+}
+.section__app>img{
+width:13px;
+height:13px;
 }
 .app{
     margin-top: 1em;
@@ -83,9 +108,29 @@ button{
     margin-left: 1.5em;
     padding: 0.5em;
 }
+.section__ui >img{
+    width: 13px;
+    height: 13px;
+}
 .section__form{
     margin-left: 1.5em;
     padding: 0.5em; 
+}
+.section__form >img{
+    width:13px;
+    height:13px;
+}
+.section__ext >img{
+    width:13px;
+    height:13px;
+}
+.section__pages >img{
+    width:13px;
+    height:13px;
+}
+.yk >img{
+    width: 13px;
+    height:13px;
 }
 .section__pages{
     margin-left: 1.5em;
@@ -106,7 +151,18 @@ button{
 .yk{
     display: flex;
     justify-content: space-between;
+    color:#606060;
+    
 }
+.main__section__text .oval{
+    width:25px;
+    height:25px;
+}
+.group{
+    width:25px;
+    height:25px;
+}
+
 .main__section{
     background-color: #F9F9F9;
 }
@@ -140,36 +196,71 @@ button{
     font-size: 14px;
 }
 .filter{
+    font-size: 10px;
+}
+.pt1{
     font-size: 12px;
+    font-weight: bold;
+}
+.pt2{
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.pt3{
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.shedy{
+    font-size: 12px;
+    font-weight: bold;
+}
+.shedytwo{
+    font-size: 11px;
 }
 .numbers{
-    font-size: 12px;
+    font-size: 10px;
 }
 .eng{
     12px;
+}
+.main__section__icons >img{
+    width: 13px;
+    height: 13px;
+}
+.engicons >img{
+    width: 13px;
+    height: 13px;
 }
 
 
 
 .overview{
     display: grid;
-    grid-template-columns:repeat(12, 1fr);
+    grid-template-columns:repeat(10, 1fr);
     grid-gap: 10px;
 
 }
 .overview__sidebar{
     grid-column: 1/4;
+}
    
 
-}
-.overview__major{
-    grid-column: 4/13;
-    
 
+.over{
+    grid-column: 4/11;
 }
+    
 .dd{
     display: flex;
     align-items: center;
+}
+.dd>img{
+    height: 30px;
+    width: 30px;
 }
 .fndi{
     display: flex;
@@ -196,41 +287,51 @@ button{
     justify-content: space-between;
     padding: 0.5em;
 }
+.slide{
+    padding: 1em;
+    display:flex;
+    justify-content: space-between;
+ 
+}
 
 .slidecontainer {
     width: 100%; /* Width of the outside container */
 }
+  
+  /* The slider itself */
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
+    height: 10px; /* Specified height */
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
+    margin-bottom: 2em;
 }
+  
+  /* Mouse-over effects */
 .slider:hover {
     opacity: 1; /* Fully shown on mouse-over */
 }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: rgb(18, 66, 224); /* Green background */
+    width: 13px; /* Set a specific slider handle width */
+    height: 13px; /* Slider handle height */
+    background: rgb(81, 79, 196); /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
+  
 .slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
+    background: rgb(48, 42, 141); /* Green background */
     cursor: pointer; /* Cursor on hover */
-}
-.slide{
-    display: flex;
-    justify-content: space-between;
 }
 .overview__major{
     display: grid;
@@ -254,17 +355,35 @@ button{
     display: flex;
     justify-content: space-between;
 }
-
-.ratings {
+.filterBar__title__item img{
+    height: 15px;
+    width: 15px;
+}
+.filterBar__title__item{
     display: flex;
     justify-content: space-between;
+    
 }
-.rating_list{
-    font-size: 12px;
+.filterBar__title{
+    padding-top: 2em;
+    padding-bottom: 1em;
 }
+
+/* .ratings {
+    display: flex;
+    justify-content: space-between;
+} */
+
 
 .desc {
     font-size: 8px;
+}
+.ec{
+    font-size: 10px;
+}
+.ect{
+    font-size: 10px;
+    color: #6F64F8;
 }
 
 .image__items {
@@ -283,42 +402,72 @@ button{
 }
 
 .merch__name {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
 }
-/* input::placeholder{
+input::placeholder{
     color: #999999;
     padding-right: 5em;
     font-size: 18px;
-} */
-/* .search{
+} 
+.search{
     position: relative;
 }
 .search input{
     width:95%;
     padding:6px;
-    box-shadow:0px 2px 8px rgba(0,0,0,0.135216);
+    /* box-shadow:0px 2px 8px rgba(0,0,0,0.135216); */
     border-radius: 8px;
-} */
-/* .search .fa-search{
+} .search .fa-search{
     position: absolute;
     top: 12px;
     left:90%;
-} */
+}
 
-/* .itemSearch__bar{
-    /* width: 30vw; */
-    /* margin-left: 10px;
-    margin-top: 8px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
-    background-color: #ffffff;
-    background-image: url('../icons/icon-search.svg');
-    background-repeat: no-repeat;
-    background-position: 98% center;
-/* } */ 
-.rating_list{
+ 
+ .rating_list{
     display:flex;
 }
+/* footer{
+    margin-top: 3em;
+    padding-left: 6.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .para{
+    display: inline;
+    font-weight: normal;
+    font-size: 12.8px;
+    color: #2C2C2C;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.pagination{
+    height: 26px;
+}
+.algolia{
+    width: 106.5px;
+    height: 29.11px;
+    padding-right: 7px;
+}
+     */
+
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.eng{
+    font-size: 12px;
+}
+.john >h4{
+    font-size: 12px;
+}
+.john >p{
+    font-size: 8px;
+}    
